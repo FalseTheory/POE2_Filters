@@ -84,6 +84,30 @@ Show # JEWELLER_ORBS
     PlayEffect Brown Temp
 Show # SOCKET_ITEMS
     Sockets >= 2
+Show # UNCUT_SUPPORT_GEMS_L1
+    BaseType == "Uncut Support Gem"
+    ItemLevel == 1
+    SetFontSize 20
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetBackgroundColor 134 134 134 220
+    MinimapIcon 2 White Circle
+Show # UNCUT_SUPPORT_GEMS_L2
+    BaseType == "Uncut Support Gem"
+    ItemLevel == 2
+    SetFontSize 22
+    SetTextColor 41 37 157
+    SetBorderColor 41 37 157
+    SetBackgroundColor 134 134 134 220
+    MinimapIcon 2 Blue Circle
+Show # UNCUT_SUPPORT_GEMS_L3
+    BaseType == "Uncut Support Gem"
+    ItemLevel >= 3
+    SetFontSize 24
+    SetTextColor 255 225 0
+    SetBorderColor 255 225 0
+    SetBackgroundColor 134 134 134 220
+    MinimapIcon 2 Yellow Circle
 Show # MAPS (unfinished)
     Class == "Waystones"
     SetFontSize 26
@@ -96,6 +120,6 @@ Hide # NON_MAGE_CLASSES
     Class == "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves" "Sceptres"
 Hide #NON_MAGE_BASES (unfinished)
     Rarity <= Magic
-    BaseType == "Advanced Elite Greathelm" "Spired Greathelm" "Advanced Sacrificial Mantle" "Advanced Heavy Crown" "Advanced Felt Cap" "Advanced Laced Boots" "Advanced Spined Bracers" "Advanced Studded Vest" "Advanced Iron Greaves" "Advanced Lace Hood" "Advanced Cowled Helm" "Advanced Bound Bracers" "Advanced Firm Bracers" "Advanced Moulded Mitts" "Advanced Cloaked Mail" "Advanced Scout's Vest" "Advanced Stacked Sabatons" "Ironclad Vestments" "Advanced Full Plate" "Advanced Riveted Mitts" "Advanced Steeltoe Boots" "Advanced Steel Plate" "Advanced Sectioned Bracers"
+    BaseType == "Advanced Elite Greathelm" "Advanced Tempered Mitts" "Advanced Shabby Hood" "Advanced Lizardscale Boots" "Expert Firm Bracers" "Advanced Feathered Tiara" "Advanced Swathed Cap" "Advanced Shielded Helm" "Expert Rogue Armour" "Advanced Chain Mail" "Advanced Serpentscale Coat" "Spired Greathelm" "Advanced Sacrificial Mantle" "Advanced Heavy Crown" "Advanced Felt Cap" "Advanced Laced Boots" "Advanced Spined Bracers" "Advanced Studded Vest" "Advanced Iron Greaves" "Advanced Lace Hood" "Advanced Cowled Helm" "Advanced Bound Bracers" "Advanced Firm Bracers" "Advanced Moulded Mitts" "Advanced Cloaked Mail" "Advanced Scout's Vest" "Advanced Stacked Sabatons" "Ironclad Vestments" "Advanced Full Plate" "Advanced Riveted Mitts" "Advanced Steeltoe Boots" "Advanced Steel Plate" "Advanced Sectioned Bracers"
 Show # SAFETY FOR ALL NON-FILTERED ITEMS
 	SetFontSize 26
