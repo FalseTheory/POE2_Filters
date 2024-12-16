@@ -1,0 +1,101 @@
+
+Show #GOLD_BIG_STACK
+    BaseType == "Gold"
+    StackSize >= 250
+    SetFontSize 26
+    SetTextColor 0 0 0 222
+    SetBackgroundColor 219 172 52 220 
+Show #GOLD_BIG_STACK
+    BaseType == "Gold"
+    SetFontSize 16
+    SetTextColor 0 0 0
+    SetBackgroundColor 219 172 52 220 
+Show # MIRROR
+    Class == "Stackable Currency"
+    BaseType == "Mirror of Kalandra"
+    SetTextColor 177 77 0 255
+    SetBackgroundColor 255 255 255
+    SetBorderColor 177 77 0 255
+    SetFontSize 45
+    PlayAlertSound ShMirror 200
+        PlayEffect White Temp
+Show # CURRENCY_SMITHING
+    Class == "Stackable Currency"
+    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Arcanist's Etcher"
+    SetTextColor 223 221 221
+    SetBackgroundColor 139 69 19 180
+    SetBorderColor 223 221 221 180
+    SetFontSize 24
+Show # CURRENCY_LOW
+    Class == "Stackable Currency"
+    BaseType == "Orb Of Transmutation" "Orb of Augmentation"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 31 140 212 180
+    SetFontSize 24
+Show # TRANSMUTATION_SHARD
+    Class == "Stackable Currency"
+    BaseType == "Transmutation Shard"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 31 140 212 180
+    SetFontSize 20
+Show # OTHER_SHARDS
+    Class == "Stackable Currency"
+    BaseType == "Artificer's Shard" "Regal Shard" "Chance Shard"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 20 199 124 180
+    SetFontSize 22
+Show # CURRENCY_VAAL
+    Class == "Stackable Currency"
+    BaseType == "Vaal Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 0 0 180
+    SetFontSize 28
+    PlayAlertSound 5 200
+        PlayEffect Red Temp
+Show #HIGH_VALUE_CURRENCY
+    Class == "Stackable Currency"
+    BaseType == "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance"
+    SetBackgroundColor 0 0 0 220
+    SetTextColor 255 164 18
+    SetBorderColor 255 164 18
+    PlayAlertSound 3 200
+    SetFontSize 28
+Show # SKILL_GEMS
+    Class == "Skill Gems" "Support Gems"
+    SetTextColor 0 162 255
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 0 162 255
+    SetFontSize 30
+Show # JEWELS_RARE
+    Class == "Jewels"
+    Rarity == Rare
+    SetTextColor 15 82 186
+    SetBorderColor 15 82 186
+    SetBackgroundColor 192 192 192 220
+    PlayAlertSoundPositional 7 200
+    SetFontSize 30
+Show # JEWELLER_ORBS
+    Class == "Stackable Currency"
+    BaseType == "Lesser Jeweller's Orb" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
+    SetFontSize 30
+    SetTextColor 0 0 0
+    SetBackgroundColor 249 232 113 220
+    SetBorderColor 0 0 0
+    PlayEffect Brown Temp
+Show # SOCKET_ITEMS
+    Sockets >= 2
+Show # MAPS (unfinished)
+    Class == "Waystones"
+    SetFontSize 26
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetBackgroundColor 0 0 0 220
+    PlayEffect White Temp
+Hide # NON_MAGE_CLASSES
+    Rarity <= Magic
+    Class == "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves" "Sceptres"
+Hide #NON_MAGE_BASES (unfinished)
+    Rarity <= Magic
+    BaseType == "Advanced Elite Greathelm" "Spired Greathelm" "Advanced Sacrificial Mantle" "Advanced Heavy Crown" "Advanced Felt Cap" "Advanced Laced Boots" "Advanced Spined Bracers" "Advanced Studded Vest" "Advanced Iron Greaves" "Advanced Lace Hood" "Advanced Cowled Helm" "Advanced Bound Bracers" "Advanced Firm Bracers" "Advanced Moulded Mitts" "Advanced Cloaked Mail" "Advanced Scout's Vest" "Advanced Stacked Sabatons" "Ironclad Vestments" "Advanced Full Plate" "Advanced Riveted Mitts" "Advanced Steeltoe Boots" "Advanced Steel Plate" "Advanced Sectioned Bracers"
+Show # SAFETY FOR ALL NON-FILTERED ITEMS
+	SetFontSize 26
