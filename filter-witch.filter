@@ -111,13 +111,33 @@ Show # UNCUT_SUPPORT_GEMS_L3
     SetBorderColor 255 225 0
     SetBackgroundColor 134 134 134 220
     MinimapIcon 2 Yellow Circle
-Show # MAPS (unfinished)
+Show # MAPS LOW
     Class == "Waystones"
+    WaystoneTier >= 1
+    WaystoneTier <= 5
     SetFontSize 26
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
     SetBackgroundColor 0 0 0 220
     PlayEffect White Temp
+Show # MAPS MID
+    Class == "Waystones"
+    WaystoneTier >= 6
+    WaystoneTier <= 10
+    SetFontSize 26
+    SetTextColor 0 242 255
+    SetBorderColor 0 242 255
+    SetBackgroundColor 0 0 0 220
+    PlayEffect Blue Temp
+Show # MAPS HIGH
+    Class == "Waystones"
+    WaystoneTier >= 11
+    WaystoneTier <= 15
+    SetFontSize 26
+    SetTextColor 212 255 0
+    SetBorderColor 212 255 0
+    SetBackgroundColor 0 0 0 220
+    PlayEffect Yellow Temp
 Hide # LOW_LEVEL_ON_ENDGAME
     Class == "Staves" "Wands" "Foci" "Sceptres"
     ItemLevel <= 45
