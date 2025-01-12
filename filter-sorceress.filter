@@ -20,6 +20,7 @@ Show # MIRROR
     SetBackgroundColor 255 255 255
     SetBorderColor 177 77 0 255
     SetFontSize 45
+    MinimapIcon 2 White Circle
     PlayAlertSound ShMirror 200
         PlayEffect White Temp
 Show # CURRENCY_SMITHING
@@ -29,6 +30,7 @@ Show # CURRENCY_SMITHING
     SetBackgroundColor 139 69 19 180
     SetBorderColor 223 221 221 180
     SetFontSize 24
+    MinimapIcon 0 Brown Circle 
 Show # CURRENCY_LOW
     Class == "Stackable Currency"
     BaseType == "Orb Of Transmutation" "Orb of Augmentation"
@@ -53,14 +55,16 @@ Show # CURRENCY_VAAL
     SetTextColor 0 0 0
     SetBackgroundColor 255 0 0 180
     SetFontSize 28
+    MinimapIcon 1 Red Circle
     PlayAlertSound 5 200
         PlayEffect Red Temp
 Show #HIGH_VALUE_CURRENCY
     Class == "Stackable Currency"
-    BaseType == "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance"
+    BaseType == "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance" "Artificer's Orb"
     SetBackgroundColor 0 0 0 220
     SetTextColor 255 164 18
     SetBorderColor 255 164 18
+    MinimapIcon 1 Orange Circle
     PlayAlertSound 3 200
     SetFontSize 28
 Show # SKILL_GEMS
@@ -75,6 +79,7 @@ Show # JEWELS_RARE
     SetTextColor 255 230 0
     SetBorderColor 255 230 0
     SetBackgroundColor 192 192 192 200
+    MinimapIcon 0 Blue Square
     PlayAlertSoundPositional 7 200
     SetFontSize 30
 Show # JEWELLER_ORBS
@@ -84,6 +89,7 @@ Show # JEWELLER_ORBS
     SetTextColor 0 0 0
     SetBackgroundColor 249 232 113 220
     SetBorderColor 0 0 0
+    MinimapIcon 1 Yellow Circle
     PlayEffect Brown Temp
 Show # SOCKET_ITEMS
     Sockets >= 2
@@ -119,6 +125,7 @@ Show # MAPS LOW
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
     SetBackgroundColor 0 0 0 220
+    MinimapIcon 0 White Cross
     PlayEffect White Temp
 Show # MAPS MID
     Class == "Waystones"
@@ -128,6 +135,7 @@ Show # MAPS MID
     SetTextColor 0 242 255
     SetBorderColor 0 242 255
     SetBackgroundColor 0 0 0 220
+    MinimapIcon 0 Blue Cross
     PlayEffect Blue Temp
 Show # MAPS HIGH
     Class == "Waystones"
@@ -137,6 +145,7 @@ Show # MAPS HIGH
     SetTextColor 212 255 0
     SetBorderColor 212 255 0
     SetBackgroundColor 0 0 0 220
+    MinimapIcon 1 Yellow Cross
     PlayEffect Yellow Temp
 Hide # LOW_LEVEL_ON_ENDGAME
     Class == "Staves" "Wands" "Foci" "Sceptres"
