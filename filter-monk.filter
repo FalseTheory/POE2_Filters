@@ -1,0 +1,155 @@
+Show #GOLD_BIG_STACK
+    BaseType == "Gold"
+    StackSize >= 250
+    SetFontSize 26
+    SetTextColor 0 0 0 222
+    SetBackgroundColor 219 172 52 220
+Show #SCROLL_OF_WISDOM
+    BaseType == "Scroll of Wisdom"
+    SetFontSize 20
+Show #GOLD_BIG_STACK
+    BaseType == "Gold"
+    SetFontSize 16
+    SetTextColor 0 0 0
+    SetBackgroundColor 219 172 52 220 
+Show # MIRROR
+    Class == "Stackable Currency"
+    BaseType == "Mirror of Kalandra"
+    SetTextColor 177 77 0 255
+    SetBackgroundColor 255 255 255
+    SetBorderColor 177 77 0 255
+    SetFontSize 45
+    MinimapIcon 2 White Circle
+    PlayAlertSound ShMirror 200
+        PlayEffect White Temp
+Show # CURRENCY_SMITHING
+    Class == "Stackable Currency"
+    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Arcanist's Etcher"
+    SetTextColor 223 221 221
+    SetBackgroundColor 139 69 19 180
+    SetBorderColor 223 221 221 180
+    SetFontSize 24
+    MinimapIcon 0 Brown Circle 
+Show # CURRENCY_LOW
+    Class == "Stackable Currency"
+    BaseType == "Orb Of Transmutation" "Orb of Augmentation"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 31 140 212 180
+    SetFontSize 24
+Show # TRANSMUTATION_SHARD
+    Class == "Stackable Currency"
+    BaseType == "Transmutation Shard"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 31 140 212 180
+    SetFontSize 20
+Show # OTHER_SHARDS
+    Class == "Stackable Currency"
+    BaseType == "Artificer's Shard" "Regal Shard" "Chance Shard"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 20 199 124 180
+    SetFontSize 22
+Show # CURRENCY_VAAL
+    Class == "Stackable Currency"
+    BaseType == "Vaal Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 0 0 180
+    SetFontSize 28
+    MinimapIcon 1 Red Circle
+    PlayAlertSound 5 200
+        PlayEffect Red Temp
+Show #HIGH_VALUE_CURRENCY
+    Class == "Stackable Currency"
+    BaseType == "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance" "Artificer's Orb"
+    SetBackgroundColor 0 0 0 220
+    SetTextColor 255 164 18
+    SetBorderColor 255 164 18
+    MinimapIcon 1 Orange Circle
+    PlayAlertSound 3 200
+    SetFontSize 28
+Show # SKILL_GEMS
+    Class == "Skill Gems" "Support Gems"
+    SetTextColor 0 162 255
+    SetBackgroundColor 0 0 0 220
+    SetBorderColor 0 162 255
+    SetFontSize 30
+Show # JEWELS_RARE
+    Class == "Jewels"
+    Rarity == Rare
+    SetTextColor 255 230 0
+    SetBorderColor 255 230 0
+    SetBackgroundColor 192 192 192 200
+    MinimapIcon 0 Blue Square
+    PlayAlertSoundPositional 7 200
+    SetFontSize 30
+Show # JEWELLER_ORBS
+    Class == "Stackable Currency"
+    BaseType == "Lesser Jeweller's Orb" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
+    SetFontSize 30
+    SetTextColor 0 0 0
+    SetBackgroundColor 249 232 113 220
+    SetBorderColor 0 0 0
+    MinimapIcon 1 Yellow Circle
+    PlayEffect Brown Temp
+Show # SOCKET_ITEMS
+    Sockets >= 2
+Show # UNCUT_SUPPORT_GEMS_L1
+    BaseType == "Uncut Support Gem"
+    ItemLevel == 1
+    SetFontSize 20
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetBackgroundColor 134 134 134 220
+    MinimapIcon 2 White Circle
+Show # UNCUT_SUPPORT_GEMS_L2
+    BaseType == "Uncut Support Gem"
+    ItemLevel == 2
+    SetFontSize 22
+    SetTextColor 41 37 157
+    SetBorderColor 41 37 157
+    SetBackgroundColor 134 134 134 220
+    MinimapIcon 2 Blue Circle
+Show # UNCUT_SUPPORT_GEMS_L3
+    BaseType == "Uncut Support Gem"
+    ItemLevel >= 3
+    SetFontSize 24
+    SetTextColor 255 225 0
+    SetBorderColor 255 225 0
+    SetBackgroundColor 134 134 134 220
+    MinimapIcon 2 Yellow Circle
+Show # MAPS LOW
+    Class == "Waystones"
+    WaystoneTier >= 1
+    WaystoneTier <= 5
+    SetFontSize 26
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetBackgroundColor 0 0 0 220
+    MinimapIcon 0 White Cross
+    PlayEffect White Temp
+Show # MAPS MID
+    Class == "Waystones"
+    WaystoneTier >= 6
+    WaystoneTier <= 10
+    SetFontSize 26
+    SetTextColor 0 242 255
+    SetBorderColor 0 242 255
+    SetBackgroundColor 0 0 0 220
+    MinimapIcon 0 Blue Cross
+    PlayEffect Blue Temp
+Show # MAPS HIGH
+    Class == "Waystones"
+    WaystoneTier >= 11
+    WaystoneTier <= 15
+    SetFontSize 26
+    SetTextColor 212 255 0
+    SetBorderColor 212 255 0
+    SetBackgroundColor 0 0 0 220
+    MinimapIcon 1 Yellow Cross
+    PlayEffect Yellow Temp
+Hide # LOW_LEVEL_ON_ENDGAME
+    Class == "Staves" "Wands" "Foci" "Sceptres"
+    ItemLevel <= 45
+    AreaLevel >= 65
+    Rarity < Unique
+Show # SAFETY FOR ALL NON-FILTERED ITEMS
+	SetFontSize 26
