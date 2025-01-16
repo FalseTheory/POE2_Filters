@@ -1,4 +1,3 @@
-
 Show #GOLD_BIG_STACK
     BaseType == "Gold"
     StackSize >= 250
