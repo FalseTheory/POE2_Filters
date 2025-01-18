@@ -146,8 +146,11 @@ Show # MAPS HIGH
     SetBackgroundColor 0 0 0 220
     MinimapIcon 1 Yellow Cross
     PlayEffect Yellow Temp
+Hide # NON_MONK_BASE
+    Rarity < Rare
+    Class == "Shields" "Wands" "Foci" "One Hand Maces" "Two Hand Maces" "Bows" "Quivers" "Crossbows"
 Hide # LOW_LEVEL_ON_ENDGAME
-    Class == "Staves" "Wands" "Foci" "Sceptres"
+    Class == "Quarterstaves"
     ItemLevel <= 45
     AreaLevel >= 65
     Rarity < Unique
