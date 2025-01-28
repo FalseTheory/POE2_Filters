@@ -42,6 +42,14 @@ Show # TRANSMUTATION_SHARD
     SetTextColor 255 255 255 255
     SetBackgroundColor 31 140 212 180
     SetFontSize 20
+Show # ORB_OF_ANNULMENT
+    Class == "Stackable Currency"
+    BaseType == "Orb of Annulment"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 255 255 255 0
+    SetBorderColor 255 255 255 255
+    SetFontSize 28
+    MinimapIcon 1 White Circle
 Show # OTHER_SHARDS
     Class == "Stackable Currency"
     BaseType == "Artificer's Shard" "Regal Shard" "Chance Shard"
@@ -57,6 +65,23 @@ Show # CURRENCY_VAAL
     MinimapIcon 1 Red Circle
     PlayAlertSound 5 200
         PlayEffect Red Temp
+Show # DIVINE_ORB
+    Class == "Stackable Currency"
+    BaseType == "Divine Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 253 208 23 200
+    SetBorderColor 255 255 255
+    PlayAlertSound 2 200
+        PlayEffect White Temp
+    MinimapIcon 1 Orange Circle
+Show # GEMCUTTER_PRISM
+    Class == "Stackable Currency"
+    BaseType == "Gemcutter's Prism"
+    SetTextColor 0 236 110
+    SetBackgroundColor 15 82 186 200
+    SetBorderColor 0 156 74
+    PlayEffect Green Temp
+    MinimapIcon 2 Green Circle
 Show #HIGH_VALUE_CURRENCY
     Class == "Stackable Currency"
     BaseType == "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance" "Artificer's Orb"
@@ -78,9 +103,18 @@ Show # JEWELS_RARE
     SetTextColor 255 230 0
     SetBorderColor 255 230 0
     SetBackgroundColor 192 192 192 200
-    MinimapIcon 0 Blue Square
+    MinimapIcon 1 Blue Square
     PlayAlertSoundPositional 7 200
     SetFontSize 30
+Show # JEWELS_MAGIC
+    Class == "Jewels"
+    Rarity == Magic
+    SetTextColor 0 98 255
+    SetBorderColor 0 98 255
+    SetBackgroundColor 192 192 192 200
+    MinimapIcon 2 Blue Square
+    PlayAlertSoundPositional 11 200
+    SetFontSize 26
 Show # JEWELLER_ORBS
     Class == "Stackable Currency"
     BaseType == "Lesser Jeweller's Orb" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
@@ -174,6 +208,6 @@ Hide # NON_MAGE_CLASSES
     Class == "One Hand Maces" "Shields" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves" "Sceptres"
 Hide #NON_MAGE_BASES (unfinished)
     Rarity <= Magic
-    BaseType == "Advanced Elite Greathelm" "Advanced Ironclad Vestments" "Scalper's Jacket" "Advanced Iron Crown" "Advanced Anchorite Garb" "Advanced Rogue Armour" "Expert Wayfarer Jacket" "Expert Serpentscale Coat" "Stacked Sabatons" "Expert Spined Bracers" "Advanced Tribal Mask" "Hunting Shoes" "Advanced Vagabond Armour" "Expert Padded Leggings" "Advanced Trimmed Greaves" "Expert Doubled Gauntlets" "Advanced Guarded Helm" "Expert Pathfinder Coat" "Expert Goldcast Cuffs" "Expert Rope Cuffs" "Expert Trimmed Greaves" "Expert Braced Sabatons" "Expert Cloaked Mail" "Expert Hunter Hood" "Advanced Scalper's Jacket" "Advanced Quilted Vest" "Expert Elite Greathelm" "Advanced Aged Cuffs" "Expert Pelt Mantle" "Expert Stone Greaves" "Expert Vaal Cuirass" "Expert Frayed Shoes" "Expert Shielded Helm" "Expert Face Mask" "Soldier Greathelm" "Expert Tribal Mask" "Expert Iron Cuirass" "Expert Waxed Jacket" "Expert Moulded Mitts" "Expert Horned Crown" "Advanced Marabout Garb" "Elite Greathelm" "Expert Spired Greathelm" "Expert Scale Mail" "Expert Linen Wraps" "Expert Lizardscale Boots" "Advanced Doubled Gauntlets" "Advanced Visored Helm" "Expert Rampart Tower Shield" "Expert Mail Sabatons" "Warrior Greathelm" "Expert Steeltoe Boots" "Expert Ringmail Gauntlets" "Expert Steel Plate" "Expert Felt Cap" "Advanced Maraketh Cuirass" "Expert Guarded Helm" "Advanced Rusted Greathelm" "Advanced Vaal Cuirass" "Expert Iron Greaves" "Advanced Spired Greathelm" "Advanced Explorer Armour" "Advanced Soldier Greathelm" "Advanced Scale Mail" "Advanced Wrapped Greathelm" "Expert Laced Boots" "Vaal Cuirass" "Expert Riveted Mitts" "Advanced Stone Greaves" "Expert Soldier Greathelm" "Advanced Embossed Boots" "Advanced Mail Sabatons" "Advanced Hunter Hood" "Advanced Iron Cuirass" "Advanced Pathfinder Coat" "Advanced Tempered Mitts" "Advanced Shabby Hood" "Advanced Lizardscale Boots" "Expert Firm Bracers" "Advanced Feathered Tiara" "Advanced Swathed Cap" "Advanced Shielded Helm" "Expert Rogue Armour" "Advanced Chain Mail" "Advanced Serpentscale Coat" "Spired Greathelm" "Advanced Sacrificial Mantle" "Advanced Heavy Crown" "Advanced Felt Cap" "Advanced Laced Boots" "Advanced Spined Bracers" "Advanced Studded Vest" "Advanced Iron Greaves" "Advanced Lace Hood" "Advanced Cowled Helm" "Advanced Bound Bracers" "Advanced Firm Bracers" "Advanced Moulded Mitts" "Advanced Cloaked Mail" "Advanced Scout's Vest" "Advanced Stacked Sabatons" "Ironclad Vestments" "Advanced Full Plate" "Advanced Riveted Mitts" "Advanced Steeltoe Boots" "Advanced Steel Plate" "Advanced Sectioned Bracers"
+    BaseType == "Advanced Elite Greathelm" "Advanced Bolstered Mitts" "Advanced Ironclad Vestments" "Scalper's Jacket" "Advanced Iron Crown" "Advanced Anchorite Garb" "Advanced Rogue Armour" "Expert Wayfarer Jacket" "Expert Serpentscale Coat" "Stacked Sabatons" "Expert Spined Bracers" "Advanced Tribal Mask" "Hunting Shoes" "Advanced Vagabond Armour" "Expert Padded Leggings" "Advanced Trimmed Greaves" "Expert Doubled Gauntlets" "Advanced Guarded Helm" "Expert Pathfinder Coat" "Expert Goldcast Cuffs" "Expert Rope Cuffs" "Expert Trimmed Greaves" "Expert Braced Sabatons" "Expert Cloaked Mail" "Expert Hunter Hood" "Advanced Scalper's Jacket" "Advanced Quilted Vest" "Expert Elite Greathelm" "Advanced Aged Cuffs" "Expert Pelt Mantle" "Expert Stone Greaves" "Expert Vaal Cuirass" "Expert Frayed Shoes" "Expert Shielded Helm" "Expert Face Mask" "Soldier Greathelm" "Expert Tribal Mask" "Expert Iron Cuirass" "Expert Waxed Jacket" "Expert Moulded Mitts" "Expert Horned Crown" "Advanced Marabout Garb" "Elite Greathelm" "Expert Spired Greathelm" "Expert Scale Mail" "Expert Linen Wraps" "Expert Lizardscale Boots" "Advanced Doubled Gauntlets" "Advanced Visored Helm" "Expert Rampart Tower Shield" "Expert Mail Sabatons" "Warrior Greathelm" "Expert Steeltoe Boots" "Expert Ringmail Gauntlets" "Expert Steel Plate" "Expert Felt Cap" "Advanced Maraketh Cuirass" "Expert Guarded Helm" "Advanced Rusted Greathelm" "Advanced Vaal Cuirass" "Expert Iron Greaves" "Advanced Spired Greathelm" "Advanced Explorer Armour" "Advanced Soldier Greathelm" "Advanced Scale Mail" "Advanced Wrapped Greathelm" "Expert Laced Boots" "Vaal Cuirass" "Expert Riveted Mitts" "Advanced Stone Greaves" "Expert Soldier Greathelm" "Advanced Embossed Boots" "Advanced Mail Sabatons" "Advanced Hunter Hood" "Advanced Iron Cuirass" "Advanced Pathfinder Coat" "Advanced Tempered Mitts" "Advanced Shabby Hood" "Advanced Lizardscale Boots" "Expert Firm Bracers" "Advanced Feathered Tiara" "Advanced Swathed Cap" "Advanced Shielded Helm" "Expert Rogue Armour" "Advanced Chain Mail" "Advanced Serpentscale Coat" "Spired Greathelm" "Advanced Sacrificial Mantle" "Advanced Heavy Crown" "Advanced Felt Cap" "Advanced Laced Boots" "Advanced Spined Bracers" "Advanced Studded Vest" "Advanced Iron Greaves" "Advanced Lace Hood" "Advanced Cowled Helm" "Advanced Bound Bracers" "Advanced Firm Bracers" "Advanced Moulded Mitts" "Advanced Cloaked Mail" "Advanced Scout's Vest" "Advanced Stacked Sabatons" "Ironclad Vestments" "Advanced Full Plate" "Advanced Riveted Mitts" "Advanced Steeltoe Boots" "Advanced Steel Plate" "Advanced Sectioned Bracers"
 Show # SAFETY FOR ALL NON-FILTERED ITEMS
 	SetFontSize 26
